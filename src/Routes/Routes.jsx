@@ -10,9 +10,11 @@ export const router = createBrowserRouter([
         path: "/",
         Component: Root,
         errorElement: <ErrorPages></ErrorPages>,
+        HydrateFallback: () => null,
         children: [
             {
                 index: true,
+                loader: () => fetch('booksData.json'),
                 path: "/",
                 Component: Home
             }

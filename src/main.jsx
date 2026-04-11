@@ -8,7 +8,8 @@ import { router } from './Routes/routes';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     
-    <RouterProvider router={router} />
+    <RouterProvider router={router} fallbackElement={null} />
+      
     
   </StrictMode>,
 )
