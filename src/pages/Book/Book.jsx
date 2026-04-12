@@ -37,7 +37,10 @@ const Book = ({ singleBook }) => {
                                     <p> {rating} </p>
                                     <CiStar />
                                 </div>
+
+
                             </div>
+                            
                         </div>
                     </div>
                 </div>
